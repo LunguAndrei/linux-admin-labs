@@ -58,3 +58,21 @@ Permission values:
 - 'systemctl is-active ssh' - checks whether the service is currently active.
 - 'systemctl is-enabled ssh' - checks whether the service is enabled for the usual automatic startup mechanism.
 - 'systemctl status ssh.socket' - displays the status of the SSH rocket unit.
+
+## Networking 
+
+- 'ip addr' - displays network interface and their IP adresses.
+- 'hostname -I' - displays IP adresses assigned to the host.
+- 'ping -c 4 1.1.1.1' - test connectivity to an IP address using four packets.
+- 'ping -c 4 google.com' - tests connectivity and name resolution for a domain.
+- 'ss -tuln' - displays listening TCP and UDP sockets with numeric addresses and ports.
+
+Netowrking-concepts:
+
+- IP Address - identifies a device or interface on a network
+- DNS - translates domain names into IP addresses.
+- Port - identifies a communication endpoint used by a service.
+- SSH - allows secure remote access; its standard port is TCP 22.
+- Loopback - local communication, commonly using 127.0.0.1 for IPv4.
+
+
