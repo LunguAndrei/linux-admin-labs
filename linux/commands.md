@@ -61,18 +61,27 @@ Permission values:
 
 ## Networking 
 
-- 'ip addr' - displays network interface and their IP adresses.
+- 'ip addr' - displays network interfaces and their IP addresses.
 - 'hostname -I' - displays IP adresses assigned to the host.
 - 'ping -c 4 1.1.1.1' - test connectivity to an IP address using four packets.
 - 'ping -c 4 google.com' - tests connectivity and name resolution for a domain.
 - 'ss -tuln' - displays listening TCP and UDP sockets with numeric addresses and ports.
-
-Netowrking-concepts:
+- 'ip route' - displays the routing table.
+- 'ip route get 8.8.8.8' - shows the route the system would use to reach a destination.
+- 'getent hosts google.com' - looks up host information using the system's configured name-resolution mechanism.
+- 'getent ahostsv4 google.com' - looks up IPv4 addresses for a hostname.
+- 'curl -I --max-time 10 https://oogle.com' - requests HTTP response headers with a ten-second time limit.
+Netowrking Concepts:
 
 - IP Address - identifies a device or interface on a network
 - DNS - translates domain names into IP addresses.
 - Port - identifies a communication endpoint used by a service.
 - SSH - allows secure remote access; its standard port is TCP 22.
 - Loopback - local communication, commonly using 127.0.0.1 for IPv4.
-
+- Gateway - forwards traffic between networks.
+- IPv4 - uses 32-bit IP addresses.
+- IPv6 - uses 128-bit IP addresses.
+- TCP - a connection-oriented transport protocol.
+- UDP - a connectionless transport protocol.
+- DHCP - automatically provides network configuration, including IP addresses.
 
