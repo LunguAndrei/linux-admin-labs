@@ -36,11 +36,16 @@
 - `chmod 644 file.txt` - owner can read and write; group and others can read.
 - `chmod 755 file.txt` - owner can read, wirte, and execute; groups and others can read and execute.
 - `chmod 700 directory` - owner has full permissions; group and others have no permissions.
+- `chmod 640 report.txt` - sets file pemissions to owner read/write, group read, others no access.
+- `stat -c '%A %a %U %G %n'` - displays symbolic permissions, numeric permissions, owner, group and filename.
 
 Permission values:
 - r = 4 (read);
 - w = 2 (write);
 - x = 1 (execute).
+
+Concepts:
+
 
 ## Processes 
 
